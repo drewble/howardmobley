@@ -1,0 +1,162 @@
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+@import "../css/animate.css";
+@import "../css/chosen.css";
+@import "bootstrap-overrides.less";
+
+
+.nice-menu {
+  background-color: @greenDarkTrans;
+  .border-radius(10px);
+  height: 23px;
+  list-style: none;
+  padding: 6px 0 0 0;
+
+  .box-shadow(1px 2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.nice-menu li {
+  float: left; /* LTR */
+  text-align: center;
+}
+
+.nice-menu li a,
+.nice-menu li .nolink {
+  border-left: 2px outset #59723b;
+  font-size: 1.5em;
+  color: @greenLightX;
+  font-variant: small-caps;
+  padding: 0 30px;
+}
+
+.nice-menu .first a,
+.nice-menu .first .nolink{
+  border-left: none;
+}
+
+.nice-menu .last a,
+.nice-menu .last .nolink{
+  border-right: none;
+}
+
+.nice-menu li a:hover {
+  color: @white;
+  text-decoration: none;
+}
+
+.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 0;
+  margin-right: 0; /* LTR */
+}
+
+.nolink {
+  display: block;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+.nice-menu-down {
+  float: left; /* LTR */
+  border: 0;
+  margin-left: 0;
+  width: 100%
+}
+
+.nice-menu-down li {
+
+}
+
+.nice-menu-down li li {
+  border-top: 0;
+}
+
+.nice-menu-down ul:before {
+  content:" ";
+  display: block;
+  border: 0.83em solid transparent;
+  border-bottom-color: @greenDark;
+  border-bottom-width: .9em;
+  margin-left: 15px;
+  margin-top: -20px;
+  width: 0px;
+}
+
+.nice-menu-down ul {
+  left: 17px; /* LTR */
+  top: 30px;
+
+  .box-shadow(1px 2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.nice-menu-down ul li {
+  background-color: @greenDark;
+  border-bottom: 1px solid @greenDark;
+  border-top: 1px solid @greenMid;
+  padding: 5px 0px 2px 0px;
+  clear: both;
+  width: 200px;
+}
+
+.nice-menu-down ul .first {
+  border-top: 0;
+}
+
+
+.nice-menu-down ul li:hover {
+  background: url("../images/burn-overlay.png");
+  background-color: @greenDark;
+}
+
+.nice-menu-down ul li a {
+  border: 0;
+  color: @white;
+  padding: 5px 18.4px;
+}
+
+.nice-menu-down ul li a:hover {
+  border: 0;
+  color: @white;
+}
+
+.nice-menu-down li ul li ul {
+  left: 12.5em; /* LTR */
+  top: -1px;
+}
+
+.nice-menu-down .menuparent a {
+  padding-left: 14px;
+  padding-right: 19px; /* LTR */
+}
+
+.nice-menu-down .menuparent {
+  background: url(../images/arrow-down.png) 92% 48% no-repeat; /* LTR */
+
+}
+
+.nice-menu-down .menuparent:hover {
+  
+}
+
+.nice-menu-down li .menuparent {
+  background: @greenDarkTrans url(../images/arrow-right.png) right center no-repeat; /* LTR */
+}
+
+.nice-menu-down li .menuparent:hover {
+ 
+}

@@ -1,0 +1,259 @@
+@import "../css/animate.css";
+@import "../css/chosen.css";
+@import "../bootstrap/less/bootstrap.less";
+
+/*
+ * PLEASE, PLEASE, PLEASE...
+ * Organize your CSS. Do not simply throw your CSS at the end
+ * of this file. Read the table of contents and _use_ it.
+ */
+
+/* TABLE OF CONTENTS
+=============================================================================
+  1. Globals - Default HTML element styling.
+  2. Library - Styling for custom classes used throughout the site.
+  3. Template - Styling for structure of the site.
+  4. Page Styles - Styling for page specific elements.
+  5. Media Queries - Styling for a range of screen sizes.
+  6. Legacy Browsers - Styling and fixes for legacy browsers.
+=============================================================================*/
+
+/* @group Globals
+=============================================================================
+Styling for default HTML elements.
+=============================================================================*/
+body {
+	background: @greenDark url('../images/reunion-gradient.png') top center no-repeat;
+	font-family: 'Cardo', serif;
+} 
+a, a:visited {
+}
+a:hover, a:active {
+}
+blockquote {
+}
+small { font-size: 80%; }
+h1 {
+	color: @white;
+	font-size: 27px;
+	font-weight: normal;
+	text-transform: small-caps;
+}
+
+h2 {
+	.border-radius(10px);
+	color: @white;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	margin: 5px;
+	padding-left: 5px;
+
+	.HmGreenGradient;
+
+	a {
+		color: @white;
+	}
+
+	a:hover {
+		color: @greenLightX;
+		text-decoration: none;
+	}
+}
+h3 {
+}
+/*::selection {
+}
+::-moz-selection {
+}*/
+/* @end */
+
+/* @group Library
+=============================================================================
+Styling for custom elements used throughout the site.
+=============================================================================*/
+.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.clearfix { display: block; }
+.selfclear { clear: both; }
+img.pull-right { margin-left: 15px; }
+img.pull-left { margin-right: 15px; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.valign-top { vertical-align: top; }
+.valign-middle { vertical-align: middle; }
+.valign-bottom { vertical-align: bottom; }
+.relative { position: relative; }
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+.bump { margin-bottom: 20px; }
+ul.horizontal > li {
+  display: inline-block;
+  .ie7-inline-block();
+}
+
+/* @group Forms */
+/* @end */
+
+/* @group Tables */
+/* @end */
+
+/* @group Buttons */
+/* @end */
+/* @end */
+
+/* @group Template
+=============================================================================
+Styling for structure of the site.
+=============================================================================*/
+#wrapper-header {
+}
+/* @end */
+
+.content-container {
+	background-color: @greenDark;
+	.border-radius(10px);
+}
+ 
+.main-content {
+	.clearfix();
+}
+
+.main-content,
+.sidebar-first {
+	
+}
+
+.sidebar-first {
+	h2 {
+		color: @white;
+
+		.border-radius(10px);
+		.HmGreenGradient;
+	}
+}
+
+.sidebar-first .block-content,
+.sidebar-first .menu,
+.main-content .block-content,
+.node .content,
+.views-field-body {
+	background-color: @offWhite;
+	margin: 5px;
+	padding: 10px;
+
+	.border-radius(10px);
+}
+
+.sidebar-first .menu {
+
+	a {
+		color: @black;
+		font-size: 1.5em;
+		font-variant: small-caps;
+		letter-spacing: 2px;
+	}
+
+	li {
+		margin: 10px 0;
+	}
+
+	li:before {
+		content: "\00BB \0020";
+		vertical-align: top;
+	}
+
+}
+
+.siteinfo {
+	background-color: @greenMidTrans;
+	.border-radius(20px);
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding: 15px;
+	width: 250px;
+
+	.site-name {
+		color: @white;
+		font-size: 40px;
+		font-variant: small-caps;
+		font-weight: bold;
+		letter-spacing: 2px;
+		line-height: 30px;
+		opacity: 1;
+	}
+}
+
+
+
+/* @group Page Styles
+=============================================================================
+Styling for page-specific elements.
+=============================================================================*/
+/* @group Front Page */
+.front {
+}
+
+.node-feed-item {
+
+	h2 {
+		background: none;
+		border-bottom: 1px solid @black;
+		font-weight: normal;
+
+		.border-radius(0);
+	}
+	
+	a {
+		color: @black;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: @greenDark;
+	}
+
+	footer {
+		margin: 5px 0;
+	}
+}
+/* @end */
+
+/* @group List Page */
+.list {
+}
+/* @end */
+/* @end */
+
+/* @group Media Queries
+=============================================================================
+Styling for a range of screen sizes.
+=============================================================================*/
+/* Up to landscape phone */
+@media (max-width: 480px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Portrait tablet to default desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Tablets and below */
+@media (max-width: 979px) {
+}
+
+/* Large desktop and up */
+@media (min-width: 1200px) {
+}
+/* @end */
+
+/* @group Legacy Browsers
+=============================================================================
+Styling and fixes for legacy browsers.
+=============================================================================*/
+.no-cssgradient {
+  /* fix me! */
+}
+/* @end */

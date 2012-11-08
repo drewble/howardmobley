@@ -1,0 +1,193 @@
+@import "../css/animate.css";
+
+@import "../css/chosen.css";
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+/******************************
+ Global CSS for ALL menu types
+******************************/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Add custom/override Bootstrap's variables & mixins in this file.
+ * Avoid altering Bootstrap's files to allow version updating.
+ * You do not need to compile this file. It is simply used to compile
+ * your application's LESS files.
+ */.HmGreenGradient {
+  background-color: #6b7f63;
+  background-image: -moz-linear-gradient(top, #96af94, #2a381a);
+  background-image: -ms-linear-gradient(top, #96af94, #2a381a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96af94), to(#2a381a));
+  background-image: -webkit-linear-gradient(top, #96af94, #2a381a);
+  background-image: -o-linear-gradient(top, #96af94, #2a381a);
+  background-image: linear-gradient(top, #96af94, #2a381a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96af94', endColorstr='#2a381a', GradientType=0);
+}
+.nice-menu {
+  background-color: rgba(42, 56, 26, 0.7);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 23px;
+  list-style: none;
+  padding: 6px 0 0 0;
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+}
+.nice-menu li {
+  float: left;
+  /* LTR */
+
+  text-align: center;
+}
+.nice-menu li a,
+.nice-menu li .nolink {
+  border-left: 2px outset #59723b;
+  font-size: 1.5em;
+  color: #d0ddc6;
+  font-variant: small-caps;
+  padding: 0 30px;
+}
+.nice-menu .first a,
+.nice-menu .first .nolink {
+  border-left: none;
+}
+.nice-menu .last a,
+.nice-menu .last .nolink {
+  border-right: none;
+}
+.nice-menu li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nice-menu ul {
+  top: 1.8em;
+  left: -1px;
+  border: 0;
+  margin-right: 0;
+  /* LTR */
+
+}
+.nolink {
+  display: block;
+}
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+.nice-menu-down {
+  float: left;
+  /* LTR */
+
+  border: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.nice-menu-down li li {
+  border-top: 0;
+}
+.nice-menu-down ul:before {
+  content: " ";
+  display: block;
+  border: 0.83em solid transparent;
+  border-bottom-color: #2a381a;
+  border-bottom-width: .9em;
+  margin-left: 15px;
+  margin-top: -20px;
+  width: 0px;
+}
+.nice-menu-down ul {
+  left: 17px;
+  /* LTR */
+
+  top: 30px;
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
+}
+.nice-menu-down ul li {
+  background-color: #2a381a;
+  border-bottom: 1px solid #2a381a;
+  border-top: 1px solid #567242;
+  padding: 5px 0px 2px 0px;
+  clear: both;
+  width: 200px;
+}
+.nice-menu-down ul .first {
+  border-top: 0;
+}
+.nice-menu-down ul li:hover {
+  background: url("../images/burn-overlay.png");
+  background-color: #2a381a;
+}
+.nice-menu-down ul li a {
+  border: 0;
+  color: #ffffff;
+  padding: 5px 18.4px;
+}
+.nice-menu-down ul li a:hover {
+  border: 0;
+  color: #ffffff;
+}
+.nice-menu-down li ul li ul {
+  left: 12.5em;
+  /* LTR */
+
+  top: -1px;
+}
+.nice-menu-down .menuparent a {
+  padding-left: 14px;
+  padding-right: 19px;
+  /* LTR */
+
+}
+.nice-menu-down .menuparent {
+  background: url(../images/arrow-down.png) 92% 48% no-repeat;
+  /* LTR */
+
+}
+.nice-menu-down li .menuparent {
+  background: rgba(42, 56, 26, 0.7) url(../images/arrow-right.png) right center no-repeat;
+  /* LTR */
+
+}

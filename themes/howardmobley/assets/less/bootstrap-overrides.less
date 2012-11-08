@@ -1,0 +1,53 @@
+@import "../bootstrap/less/variables";
+@import "../bootstrap/less/mixins";
+
+/*
+ * Add custom/override Bootstrap's variables & mixins in this file.
+ * Avoid altering Bootstrap's files to allow version updating.
+ * You do not need to compile this file. It is simply used to compile
+ * your application's LESS files.
+ */ 
+
+// Variables
+@greenLightX: #d0ddc6; 
+@greenLight: #96af94;
+@greenMid: #567242;
+@greenMidTrans: rgba(86, 114, 66, 0.7);
+@greenDark: #2a381a;
+@greenDarkTrans: rgba(42, 56, 26, 0.7);
+@offWhite: #eae6d8;
+
+ 
+// HM Gradients
+.HmGreenGradient { #gradient > .vertical(@greenLight, @greenDark); }
+
+// Custom mixins
+.animate(@duration: .75s, @delay: .5s, @timing-function: ease, @fill-mode: both, @animation: fadeIn) {
+  -webkit-animation-duration: @duration;
+     -moz-animation-duration: @duration;
+          animation-duration: @duration;
+  -webkit-animation-delay: @delay;
+     -moz-animation-delay: @delay;
+          animation-delay: @delay;
+  -webkit-animation-timing-function: @timing-function;
+     -moz-animation-timing-function: @timing-function;
+          animation-timing-function: @timing-function;
+  -webkit-animation-fill-mode: @fill-mode;
+     -moz-animation-fill-mode: @fill-mode;
+          animation-fill-mode: @fill-mode;
+  -webkit-animation-name: @animation;
+     -moz-animation-name: @animation;
+          animation-name: @animation;
+}
+
+
+// multiple box shadow
+.box-shadow (@shadow1, @shadow2: transparent 0 0 0 ) {
+    -moz-box-shadow: @shadow1, @shadow2;
+    -webkit-box-shadow: @shadow1, @shadow2;
+    box-shadow: @shadow1, @shadow2;
+}
+
+
+// Organize Bootstrap mixin overrides by the file from which they originate.
+// e.g. - [bootstrap_file_name].less
