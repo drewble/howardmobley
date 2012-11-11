@@ -1,5 +1,5 @@
 <div class="footer-content">
-<div class="container">
+<div class="container footer-container">
   <div class="row">
     <div class="span12">
       <footer role="contentinfo">

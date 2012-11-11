@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
-<div class="container">
+<div class="container body-container">
 <header class="navigation" role="banner">
 
   <div class="row">

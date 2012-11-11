@@ -23,35 +23,37 @@
 Styling for default HTML elements.
 =============================================================================*/
 body {
-	background: @greenDark url('../images/reunion-gradient.png') top center no-repeat;
+	background-color: @greenDarkTrans;
+	// background-color: @greenDarkTrans;
 	font-family: 'Cardo', serif;
 } 
-a, a:visited {
+a, a:visited { 
 }
 a:hover, a:active {
-}
-blockquote {
+} 
+blockquote { 
 }
 small { font-size: 80%; }
 h1 {
 	color: @white;
 	font-size: 27px;
 	font-weight: normal;
-	text-transform: small-caps;
+	// text-transform: small-caps;
 }
 
 h2 {
 	.border-radius(10px);
-	color: @white;
+	color: @offWhite;
 	font-variant: small-caps;
-	letter-spacing: 2px;
+	font-weight: 400;
+	// letter-spacing: 2px;
 	margin: 5px;
 	padding-left: 5px;
 
 	.HmGreenGradient;
 
 	a {
-		color: @white;
+		color: @offWhite;
 	}
 
 	a:hover {
@@ -109,9 +111,42 @@ Styling for structure of the site.
 }
 /* @end */
 
+.body-container {
+	.box-shadow(0px -10px 5px 5px rgba(0, 0, 0, .3));
+	position: relative;
+}
+
+.body-container,
+.footer-container {
+	background: #363E30;
+	border-left: 20px solid #F1E0C2;
+	border-right: 20px solid #F1E0C2;
+	padding: 0px 20px 10px;
+	z-index: 1;
+}
+.footer-container {
+	.box-shadow(0px 0px 5px 5px rgba(0, 0, 0, .3));
+	z-index: 0;
+}
+
+.navigation:before {
+	background: url('../images/family-large.png') top center no-repeat;
+	border: 20px solid #F1E0C2;
+	border-top: 0;
+	content: "";
+	display: block;
+	height: 414px;
+	margin-bottom: -414px;
+	margin-left: -40px;
+	position: relative;
+	z-index: -1;
+	width: 980px;
+}
+
 .content-container {
 	background-color: @greenDark;
 	.border-radius(10px);
+	// color: @greenLightX;
 }
  
 .main-content {
@@ -125,10 +160,11 @@ Styling for structure of the site.
 
 .sidebar-first {
 	h2 {
-		color: @white;
-
-		.border-radius(10px);
+		color: @offWhite;
 		.HmGreenGradient;
+ 
+		.border-radius(10px);
+		
 	}
 }
 
@@ -137,7 +173,7 @@ Styling for structure of the site.
 .main-content .block-content,
 .node .content,
 .views-field-body {
-	background-color: @offWhite;
+	background-color: @dirtyWhite;
 	margin: 5px;
 	padding: 10px;
 
@@ -149,8 +185,8 @@ Styling for structure of the site.
 	a {
 		color: @black;
 		font-size: 1.5em;
-		font-variant: small-caps;
-		letter-spacing: 2px;
+		// font-variant: small-caps;
+		// letter-spacing: 2px;
 	}
 
 	li {
@@ -173,11 +209,11 @@ Styling for structure of the site.
 	width: 250px;
 
 	.site-name {
-		color: @white;
+		color: @offWhite;
 		font-size: 40px;
 		font-variant: small-caps;
 		font-weight: bold;
-		letter-spacing: 2px;
+		// letter-spacing: 2px;
 		line-height: 30px;
 		opacity: 1;
 	}

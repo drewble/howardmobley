@@ -47,18 +47,18 @@
  * You do not need to compile this file. It is simply used to compile
  * your application's LESS files.
  */.HmGreenGradient {
-  background-color: #6b7f63;
-  background-image: -moz-linear-gradient(top, #96af94, #2a381a);
-  background-image: -ms-linear-gradient(top, #96af94, #2a381a);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96af94), to(#2a381a));
-  background-image: -webkit-linear-gradient(top, #96af94, #2a381a);
-  background-image: -o-linear-gradient(top, #96af94, #2a381a);
-  background-image: linear-gradient(top, #96af94, #2a381a);
+  background-color: rgba(133, 158, 127, 0.8799999999999999);
+  background-image: -moz-linear-gradient(top, #96af94, rgba(86, 109, 70, 0.7));
+  background-image: -ms-linear-gradient(top, #96af94, rgba(86, 109, 70, 0.7));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#96af94), to(rgba(86, 109, 70, 0.7)));
+  background-image: -webkit-linear-gradient(top, #96af94, rgba(86, 109, 70, 0.7));
+  background-image: -o-linear-gradient(top, #96af94, rgba(86, 109, 70, 0.7));
+  background-image: linear-gradient(top, #96af94, rgba(86, 109, 70, 0.7));
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96af94', endColorstr='#2a381a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96af94', endColorstr='rgba(86, 109, 70, 0.7)', GradientType=0);
 }
 .nice-menu {
-  background-color: rgba(42, 56, 26, 0.7);
+  background-color: rgba(35, 45, 27, 0.7);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -80,7 +80,7 @@
 }
 .nice-menu li a,
 .nice-menu li .nolink {
-  border-left: 2px outset #59723b;
+  border-left: 2px outset #566d46;
   font-size: 1.5em;
   color: #d0ddc6;
   font-variant: small-caps;
@@ -127,7 +127,7 @@
   content: " ";
   display: block;
   border: 0.83em solid transparent;
-  border-bottom-color: #2a381a;
+  border-bottom-color: #232d1b;
   border-bottom-width: .9em;
   margin-left: 15px;
   margin-top: -20px;
@@ -146,9 +146,9 @@
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), transparent 0 0 0;
 }
 .nice-menu-down ul li {
-  background-color: #2a381a;
-  border-bottom: 1px solid #2a381a;
-  border-top: 1px solid #567242;
+  background-color: #232d1b;
+  border-bottom: 1px solid #232d1b;
+  border-top: 1px solid #566d46;
   padding: 5px 0px 2px 0px;
   clear: both;
   width: 200px;
@@ -158,7 +158,7 @@
 }
 .nice-menu-down ul li:hover {
   background: url("../images/burn-overlay.png");
-  background-color: #2a381a;
+  background-color: #232d1b;
 }
 .nice-menu-down ul li a {
   border: 0;
@@ -187,7 +187,7 @@
 
 }
 .nice-menu-down li .menuparent {
-  background: rgba(42, 56, 26, 0.7) url(../images/arrow-right.png) right center no-repeat;
+  background: rgba(35, 45, 27, 0.7) url(../images/arrow-right.png) right center no-repeat;
   /* LTR */
 
 }

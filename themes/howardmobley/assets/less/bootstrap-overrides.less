@@ -11,15 +11,20 @@
 // Variables
 @greenLightX: #d0ddc6; 
 @greenLight: #96af94;
-@greenMid: #567242;
-@greenMidTrans: rgba(86, 114, 66, 0.7);
-@greenDark: #2a381a;
-@greenDarkTrans: rgba(42, 56, 26, 0.7);
+@greenMid: rgba(86, 109, 70, 1);
+@greenMidTrans: rgba(86, 109, 70, 0.7);
+@greenDark: #232d1b;
+@greenDarkTrans: rgba(35, 45, 27, 0.7);
 @offWhite: #eae6d8;
+@dirtyWhite: #fff5e2;
+@gold: #d3c387;
+@goldTrans: rgba(211, 195, 135, 0.7);
+@slate: rgba(137, 137, 137, 1);
+@slateTrans: rgba(137, 137, 137, 0.2);
 
  
 // HM Gradients
-.HmGreenGradient { #gradient > .vertical(@greenLight, @greenDark); }
+.HmGreenGradient { #gradient > .vertical(@greenLight, @greenMidTrans); }
 
 // Custom mixins
 .animate(@duration: .75s, @delay: .5s, @timing-function: ease, @fill-mode: both, @animation: fadeIn) {
